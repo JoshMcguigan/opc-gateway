@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api route tests return appropriate data when browsing and reading in single request 1`] = `
+Object {
+  "browse": Array [
+    Object {
+      "references": Array [
+        Object {
+          "browseName": Object {
+            "name": "FolderType",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "FolderType",
+          },
+          "isForward": true,
+          "nodeClass": "ObjectType",
+          "nodeId": "ns=0;i=61",
+          "referenceTypeId": "ns=0;i=40",
+          "typeDefinition": "ns=0;i=0",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Objects",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Objects",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=85",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Types",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Types",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=86",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Views",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Views",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=87",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+      ],
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+    },
+  ],
+  "readVariableValue": Object {
+    "serverPicoseconds": 0,
+    "sourcePicoseconds": 0,
+    "statusCode": Object {
+      "description": "No Error",
+      "name": "Good",
+      "value": 0,
+    },
+    "value": Object {
+      "arrayType": "Scalar",
+      "dataType": "DateTime",
+      "value": "2016-10-13T08:40:00.000Z",
+    },
+  },
+}
+`;
+
+exports[`api route tests return appropriate data when reading multiple values 1`] = `
+Object {
+  "readVariableValue": Array [
+    Object {
+      "serverPicoseconds": 0,
+      "sourcePicoseconds": 0,
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+      "value": Object {
+        "arrayType": "Scalar",
+        "dataType": "DateTime",
+        "value": "2016-10-13T08:40:00.000Z",
+      },
+    },
+    Object {
+      "serverPicoseconds": 0,
+      "sourcePicoseconds": 0,
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+      "value": Object {
+        "arrayType": "Scalar",
+        "dataType": "DateTime",
+        "value": "2016-10-13T08:40:00.000Z",
+      },
+    },
+  ],
+}
+`;
+
+exports[`api route tests return appropriate data when reading single value 1`] = `
+Object {
+  "readVariableValue": Object {
+    "serverPicoseconds": 0,
+    "sourcePicoseconds": 0,
+    "statusCode": Object {
+      "description": "No Error",
+      "name": "Good",
+      "value": 0,
+    },
+    "value": Object {
+      "arrayType": "Scalar",
+      "dataType": "DateTime",
+      "value": "2016-10-13T08:40:00.000Z",
+    },
+  },
+}
+`;
+
+exports[`api route tests return appropriate data when requesting browse to multiple folders which exist 1`] = `
+Object {
+  "browse": Array [
+    Object {
+      "references": Array [
+        Object {
+          "browseName": Object {
+            "name": "FolderType",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "FolderType",
+          },
+          "isForward": true,
+          "nodeClass": "ObjectType",
+          "nodeId": "ns=0;i=61",
+          "referenceTypeId": "ns=0;i=40",
+          "typeDefinition": "ns=0;i=0",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Objects",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Objects",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=85",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Types",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Types",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=86",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Views",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Views",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=87",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+      ],
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+    },
+    Object {
+      "references": Array [
+        Object {
+          "browseName": Object {
+            "name": "FolderType",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "FolderType",
+          },
+          "isForward": true,
+          "nodeClass": "ObjectType",
+          "nodeId": "ns=0;i=61",
+          "referenceTypeId": "ns=0;i=40",
+          "typeDefinition": "ns=0;i=0",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Objects",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Objects",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=85",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Types",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Types",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=86",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Views",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Views",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=87",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+      ],
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+    },
+  ],
+}
+`;
+
+exports[`api route tests return appropriate data when requesting browse to single folder which exists 1`] = `
+Object {
+  "browse": Array [
+    Object {
+      "references": Array [
+        Object {
+          "browseName": Object {
+            "name": "FolderType",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "FolderType",
+          },
+          "isForward": true,
+          "nodeClass": "ObjectType",
+          "nodeId": "ns=0;i=61",
+          "referenceTypeId": "ns=0;i=40",
+          "typeDefinition": "ns=0;i=0",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Objects",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Objects",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=85",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Types",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Types",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=86",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+        Object {
+          "browseName": Object {
+            "name": "Views",
+            "namespaceIndex": 0,
+          },
+          "displayName": Object {
+            "text": "Views",
+          },
+          "isForward": true,
+          "nodeClass": "Object",
+          "nodeId": "ns=0;i=87",
+          "referenceTypeId": "ns=0;i=35",
+          "typeDefinition": "ns=0;i=61",
+        },
+      ],
+      "statusCode": Object {
+        "description": "No Error",
+        "name": "Good",
+        "value": 0,
+      },
+    },
+  ],
+}
+`;

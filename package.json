@@ -1,0 +1,26 @@
+{
+  "name": "opc-gateway",
+  "version": "0.0.1",
+  "description": "Gateway to expose OPC-UA data via REST",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "npm run test:unit",
+    "test:unit": "jest __tests__/unit",
+    "test:mockopc": "./node_modules/.bin/simple_server",
+    "test:mockapp": "npm start opc.tcp://localhost:26543 3000",
+    "test:integration": "jest __tests__/integration"
+  },
+  "author": "Josh Mcguigan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-opcua": "0.1.0-9"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "node-opcua-samples": "0.1.0-9",
+    "supertest": "^3.0.0"
+  }
+}
