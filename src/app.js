@@ -1,9 +1,8 @@
-const opcua = require("node-opcua");
+const opcua = require('node-opcua');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const actionDispatch = require("./actionDispatch");
-const httpRequestParse = require("./httpRequestParse");
+const httpRequestHandler = require('./httpRequestHandler');
 
 const app = function(opcEndpointUrl, port){
 
@@ -29,20 +28,7 @@ const app = function(opcEndpointUrl, port){
     api.use(bodyParser.urlencoded({ extended: true }));
 
     api.post('/api', function(req, res){
-        if(opcClientSession){
-            actionDispatch(opcClientSession, httpRequestParse(req))
-            .then((response)=>{
-                res.statusCode = 200;
-                res.send(response);
-            })
-            .catch(()=>{
-                res.statusCode = 502;
-                res.send();
-            });
-        } else {
-            res.statusCode = 502;
-            res.send();
-        }
+        httpRequestHandler(opcClientSession, req, res);
     });
 
     api.listen(port, function () {
