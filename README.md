@@ -1,6 +1,6 @@
 # opc-gateway
 
-OPC Gateway exposes data from an OPC-UA server via a REST API.
+OPC Gateway exposes data from an OPC-UA server via HTTP and WebSocket APIs.
 
 ## Run
 
