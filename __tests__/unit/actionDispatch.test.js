@@ -16,7 +16,7 @@ test('actionDispatch should be a function', ()=>{
     expect(typeof actionDispatch).toBe('function');
 });
 
-test('actionDispatch should return promise with empty object when called with no actions', (done)=>{
+test('it should return promise with empty object when called with no actions', (done)=>{
     const actions = {};
     actionDispatch(opcClientSession, actions).then((opcData)=>{
         expect(opcData).toEqual({});
@@ -24,7 +24,7 @@ test('actionDispatch should return promise with empty object when called with no
     })
 });
 
-test('actionDispatch should return promise with results of calling each action', (done)=>{
+test('it should return promise with results of calling each action', (done)=>{
     const actions = {
         readVariableValue: ['arg1', 'arg2'],
         browse: ['arg 3', 'arg 4']

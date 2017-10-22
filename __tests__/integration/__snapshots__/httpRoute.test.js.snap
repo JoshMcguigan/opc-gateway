@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`api route tests return appropriate data when browsing and reading in single request 1`] = `
+exports[`return appropriate data when browsing and reading in single request 1`] = `
 Object {
   "browse": Array [
     Object {
@@ -86,7 +86,7 @@ Object {
 }
 `;
 
-exports[`api route tests return appropriate data when reading multiple values 1`] = `
+exports[`return appropriate data when reading multiple values 1`] = `
 Object {
   "readVariableValue": Array [
     Object {
@@ -121,7 +121,7 @@ Object {
 }
 `;
 
-exports[`api route tests return appropriate data when reading single value 1`] = `
+exports[`return appropriate data when reading single value 1`] = `
 Object {
   "readVariableValue": Object {
     "serverPicoseconds": 0,
@@ -140,7 +140,7 @@ Object {
 }
 `;
 
-exports[`api route tests return appropriate data when requesting browse to multiple folders which exist 1`] = `
+exports[`return appropriate data when requesting browse to multiple folders which exist 1`] = `
 Object {
   "browse": Array [
     Object {
@@ -277,7 +277,7 @@ Object {
 }
 `;
 
-exports[`api route tests return appropriate data when requesting browse to single folder which exists 1`] = `
+exports[`return appropriate data when requesting browse to single folder which exists 1`] = `
 Object {
   "browse": Array [
     Object {

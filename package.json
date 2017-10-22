@@ -16,11 +16,13 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "express-ws": "^3.0.0",
     "node-opcua": "0.1.0-9"
   },
   "devDependencies": {
     "jest": "^21.2.1",
     "node-opcua-samples": "0.1.0-9",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "ws": "^3.2.0"
   }
 }
