@@ -13,7 +13,8 @@ npm start opc.tcp://localhost:26543 3000
 ## Use
 
 ```
-// Post this to /api
+// POST this to /api (HTTP)
+// or send it to /api (WebSockets)
 {
 	"readVariableValue":"ns=1;s=FanSpeed",
 	"browse": "RootFolder"
