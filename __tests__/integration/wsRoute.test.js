@@ -50,7 +50,7 @@ test('return appropriate data when reading single value', (done)=>{
     });
     ws.on('message', function(response){
         let responseObject = JSON.parse(response);
-        expect(responseObject.body).toMatchSnapshot();
+        expect(responseObject).toMatchSnapshot();
         done();
     });
 });
@@ -65,7 +65,7 @@ test('return appropriate data when reading multiple values', (done)=>{
     });
     ws.on('message', function(response){
         let responseObject = JSON.parse(response);
-        expect(responseObject.body).toMatchSnapshot();
+        expect(responseObject).toMatchSnapshot();
         done();
     });
 });
@@ -124,7 +124,7 @@ test('return appropriate data when requesting browse to single folder which exis
     });
     ws.on('message', function(response){
         let responseObject = JSON.parse(response);
-        expect(responseObject.body).toMatchSnapshot();
+        expect(responseObject).toMatchSnapshot();
         done();
     });
 });
@@ -139,7 +139,7 @@ test('return appropriate data when requesting browse to multiple folders which e
     });
     ws.on('message', function(response){
         let responseObject = JSON.parse(response);
-        expect(responseObject.body).toMatchSnapshot();
+        expect(responseObject).toMatchSnapshot();
         done();
     });
 });
@@ -154,7 +154,7 @@ test('return appropriate data when browsing and reading in single request', (don
     });
     ws.on('message', function(response){
         let responseObject = JSON.parse(response);
-        expect(responseObject.body).toMatchSnapshot();
+        expect(responseObject).toMatchSnapshot();
         done();
     });
 });

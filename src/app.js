@@ -46,6 +46,7 @@ const app = function(opcEndpointUrl, port){
             let allowedActions = ['readVariableValue', 'browse'];
             requestHandler(opcClientSession, req, allowedActions)
             .then((response)=>{
+                response['request'] = req;
                 wsSend(JSON.stringify(response), ws, wsOPCSubscriptions);
             });
         });
@@ -98,6 +99,7 @@ const app = function(opcEndpointUrl, port){
 
                         monitoredItem.on("changed",function(dataValue){
                             let value = dataValue.value.value;
+                            // TODO reformat this response object so it is more consistent with the read/browse API above
                             let responseObject = {};
                             responseObject[opcPath] = dataValue;
                             // Don't send to websocket connections who have been terminated and removed from wsOPCSubscriptions
