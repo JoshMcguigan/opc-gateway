@@ -18,8 +18,12 @@ const app = function(opcEndpointUrl, port){
             opcClient.createSession(function(err,session){
                 if(!err) {
                     opcClientSession = session;
+                } else {
+                    throw err;
                 }
             });
+        } else {
+            throw err;
         }
     });
 
@@ -139,6 +143,6 @@ const app = function(opcEndpointUrl, port){
       console.log(`API listening on port ${port}!`)
     });
 
-}
+};
 
 module.exports = app;

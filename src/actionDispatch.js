@@ -1,4 +1,8 @@
 const promiseWrap = function(opcClientSession, func, args){
+    if (!opcClientSession) {
+        throw new Error('Not connected to OPC server');
+    }
+
     promise = new Promise((resolve, reject)=>{
         // TODO appropriately handle function calls with more than one argument by unpacking args array
         opcClientSession[func](args, (error, data)=>{
@@ -14,7 +18,7 @@ const promiseWrap = function(opcClientSession, func, args){
     });
 
     return promise;
-}
+};
 
 const actionDispatch = function(opcClientSession, actions){
     promise = new Promise((resolve, reject)=>{

@@ -1,6 +1,6 @@
 {
   "name": "opc-gateway",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gateway to expose OPC-UA data via REST",
   "main": "src/index.js",
   "scripts": {

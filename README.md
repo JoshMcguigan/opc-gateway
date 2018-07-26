@@ -89,3 +89,7 @@ npm run test:mockopc
 npm run test:mockapp
 npm run test:integration
 ```
+
+## Troubleshooting
+
+If you get errors related to certificates when starting opc-gateway or running the tests, there is likely a conflict between the version of openssl on your machine and what is required by the `node-opcua` version used by opc-gateway. The specifics for fixing this will depend on the setup of your machine, but [this](https://github.com/node-opcua/node-opcua/issues?utf8=%E2%9C%93&q=is%3Aissue+certificate) would be a good starting point. 

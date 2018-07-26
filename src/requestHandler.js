@@ -14,11 +14,12 @@ const requestHandler = function(opcClientSession, req, allowedActions){
             response.body = body;
             resolve(response);
         })
-        .catch(()=>{
+        .catch((e)=>{
+            console.log(e);
             response.statusCode = 502;
             resolve(response);
         });
     })
-}
+};
 
 module.exports = requestHandler;
