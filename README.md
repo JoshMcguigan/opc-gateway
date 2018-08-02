@@ -2,6 +2,10 @@
 
 OPC Gateway exposes data from an OPC-UA server via HTTP and WebSocket APIs.
 
+## Support
+
+This package is no longer actively maintained.
+
 ## Run
 
 OPC Gateway is launched from the command line with two arguments: the URL of the OPC server and the port number to use for the web server.
